@@ -1,0 +1,28 @@
+{
+  "name": "tdd4",
+  "version": "1.0.0",
+  "description": "Willkommen zu meinem Memory-Spiel!  \r Dies ist ein modernes, zweispielerfähiges Memory-Game, komplett umgesetzt mit **TypeScript**, **HTML**, **CSS**, und **Bootstrap 4**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/css": "^0.9.0",
+    "@eslint/js": "^9.29.0",
+    "@eslint/json": "^0.12.0",
+    "eslint": "^9.29.0",
+    "globals": "^16.2.0",
+    "typescript-eslint": "^8.34.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/if24b257/tdd4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/if24b257/tdd4/issues"
+  },
+  "homepage": "https://github.com/if24b257/tdd4#readme"
+}

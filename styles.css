@@ -1,0 +1,68 @@
+/* Hintergrundfarbe für die gesamte Seite */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Spielfeld als Grid-Layout mit 4 Spalten */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* 4 Spalten à 100px */
+  gap: 10px; /* Abstand zwischen den Karten */
+}
+
+/* Grund-Design der Spielkarten */
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff; /* Blau als Standardfarbe */
+  display: flex;
+  align-items: center; /* Inhalt vertikal zentrieren */
+  justify-content: center; /* Inhalt horizontal zentrieren */
+  font-size: 2rem; /* Schriftgröße */
+  color: transparent; /* Text zunächst unsichtbar */
+  cursor: pointer; /* Zeiger wird zur Hand */
+  border-radius: 8px; /* Abgerundete Ecken */
+  user-select: none; /* Verhindert Markieren des Textes */
+  transition: transform 0.6s, background-color 0.3s; /* Animationen für Drehung und Hintergrund */
+  transform-style: preserve-3d; /* 3D-Effekt für Drehung */
+  position: relative; /* Für Transformationen notwendig */
+}
+
+/* Wenn eine Karte umgedreht wird */
+.card.flipped {
+  background-color: #28a745; /* Grün bei umgedrehter Karte */
+  color: white; /* Text sichtbar machen */
+  transform: rotateY(180deg); /* 180° Drehung für Flip-Effekt */
+}
+
+/* Wenn ein Kartenpaar gefunden wurde */
+.matched {
+  background-color: #28a745; /* Bleibt grün */
+  animation: matchGlow 0.5s ease; /* Glüheffekt bei Match */
+}
+
+/* Animation für Leuchteffekt bei gefundenem Kartenpaar */
+@keyframes matchGlow {
+  0% { box-shadow: 0 0 5px #28a745; }
+  50% { box-shadow: 0 0 20px #28a745; }
+  100% { box-shadow: 0 0 5px #28a745; }
+}
+
+/* Highlight für den aktuell aktiven Spieler */
+.active-player {
+  border: 3px solid #ffc107; /* Gelber Rahmen */
+  border-radius: 8px; /* Abgerundete Ecken */
+  padding: 10px; /* Innenabstand */
+  background-color: #fff3cd; /* Hellgelber Hintergrund */
+  transition: all 0.3s ease; /* Sanfter Übergang bei Änderungen */
+}
+
+/* Styling für die Statusanzeige (z.B. aktueller Spieler, Punktestand) */
+#status {
+  margin-top: 20px; /* Abstand nach oben */
+  font-size: 1.2rem; /* Schriftgröße */
+  font-weight: bold; /* Fetter Text */
+  color: #333; /* Dunkelgraue Farbe */
+  white-space: pre-line; /* Zeilenumbrüche im Text beachten */
+  text-align: center; /* Zentrierter Text */
+}
