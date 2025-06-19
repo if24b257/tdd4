@@ -53,7 +53,7 @@ function flipCard(event) {
     if (card.classList.contains('flipped') || flippedCards.length >= 2)
         return;
     card.classList.add('flipped');
-    card.textContent = (_a = card.dataset.symbol) !== null && _a !== void 0 ? _a : '';
+    card.textContent = (_a = card.dataset.symbol) !== null && _a !== void 0 ? _a : ''; //?? -> wenn kein Symbol von links kommt, wird rechts eingefügt
     flippedCards.push(card);
     if (flippedCards.length === 2) {
         setTimeout(checkForMatch, 500);

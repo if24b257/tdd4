@@ -22,7 +22,7 @@ body {
   color: transparent; /* Text zunächst unsichtbar */
   cursor: pointer; /* Zeiger wird zur Hand */
   border-radius: 8px; /* Abgerundete Ecken */
-  user-select: none; /* Verhindert Markieren des Textes */
+ /* user-select: none;  Verhindert Markieren des Textes */
   transition: transform 0.6s, background-color 0.3s; /* Animationen für Drehung und Hintergrund */
   transform-style: preserve-3d; /* 3D-Effekt für Drehung */
   position: relative; /* Für Transformationen notwendig */

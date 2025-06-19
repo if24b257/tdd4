@@ -13,7 +13,6 @@ const gameBoard = document.getElementById('game-board')!;
 const statusElement = document.getElementById("status") as HTMLDivElement;
 const pairCountInput = document.getElementById("pair-count") as HTMLInputElement;
 const startButton = document.getElementById("start-button") as HTMLButtonElement;
-const resetButton = document.getElementById("reset-button") as HTMLButtonElement;
 const player1scoreElement = document.getElementById("player1score")!;
 const player2scoreElement = document.getElementById("player2score")!;
 const currentPlayerElement = document.getElementById("currentplayer")!;
